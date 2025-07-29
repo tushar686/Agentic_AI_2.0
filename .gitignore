@@ -1,0 +1,8 @@
+*.env
+.DS_Store
+
+# Ignore workspace and __pycache__ folders globally (anywhere in the repo)
+**/workspace/
+**/__pycache__/
+
+
