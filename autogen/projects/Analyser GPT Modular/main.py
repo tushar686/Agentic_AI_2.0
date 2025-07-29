@@ -13,8 +13,8 @@ async def main():
         # task = 'Can you give me a graph of dies and survivd in my titanic.csv'
         task = 'Can you give me a graph of types of flowers in my data iris.csv'
         async for message in team.run_stream(task=task):
-            print(f'{message}')
-            print()
+            print(f'Source=*****{message.source}***** : Content: {message.content}')
+            
     except Exception as e:
         print(f'error {e}')
     finally:
